@@ -1,0 +1,35 @@
+<div id="modal" class="hide">
+    <div class="content">
+        <h1>Nova Ideia</h1>
+        <form action="">
+
+            <div class="inputs">
+                <label for="title">Título da ideia</label> <!-- Rótulo do input inserido no for-->
+                <input type="text" name="title"> <!-- Entrada do tipo texto, e nome dela para o back-end-->
+            </div>
+
+            <div class="inputs">
+                <label for="category">Categoria</label>
+                <input type="text" name="category">
+            </div>
+
+            <div class="inputs">
+                <label for="image">Link da Imagem</label>
+                <input type="url" name="image">
+            </div>
+
+            <div class="inputs">
+                <label for="description">Descrição da idéia</label>
+                <textarea name="description" cols="75" rows="8"></textarea>
+            </div>
+
+            <div class="inputs">
+                <label for="link">Link da Ideia</label>
+                <input type="url" name="link">
+            </div>
+        
+        <a href="#" onclick="onoff()">Voltar</a>
+        <button>Enviar ideia</button>
+        </form>
+   </div>
+</div>

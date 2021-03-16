@@ -1,0 +1,51 @@
+{%extends "layout.html"%}
+        <!--Esse bloco é levado para o layout.html-->
+{%block content%}
+
+
+<section id="intro">
+    <header>
+        <a href="/">
+        <img src="/logo.png" alt="Imagem logo">
+        </a>
+     </header>
+
+     <main>
+
+     <p>
+         Ficar em casa em períodos longos, não deve ser nada fácil.
+     </p>
+     <p>
+         Iremos catalogar ideias,<strong> brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
+     </p>
+     <p>
+         Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.
+     </p>
+     
+     </main>
+
+     <section id="buttons">
+         <button onclick="onoff()">
+             Tenho uma ideia
+         </button>
+         <a href="/ideias" class= "c1">
+             Ver ideias
+         </button>
+     </section>
+     
+     <footer id="i1">
+         <a href="https://www.linkedin.com/in/marcomrj/" target="_blank">  Com ♥️ Marco</a> <!--Esse target defini como vai ser aberto o link, nova aba na pag e talz-->
+     </footer>
+     
+     
+ 
+     <script src="/script.js"></script> <!--Importou o script de um arq da pasta-->
+ </section>
+
+ <section id="last-ideas">
+
+     {%include "all_ideas.html"%}
+ </section>
+
+{%endblock%}
+

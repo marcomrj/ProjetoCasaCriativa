@@ -1,0 +1,312 @@
+body{
+    background: #eee; /*Cor do fundo*/
+    /*text-align: center; Alinhamento do texto*/
+    margin:0;            /*Margem lateral obrigatoria da body, vem com 8*/
+    font-family: 'Baloo 2', cursive; /*Pega fonte no google fonts e coloca segundo o que eles falam la*/
+}
+body.hideScroll{
+    overflow: hidden;
+}
+button{
+    border:none;        /*Borda do botão*/
+    font-weight: bold;       /*Tamanho da fonte*/
+    cursor: pointer;        /*Quando o cursor ficar em cima, fica de tal jeito*/
+    outline: none;          /*Não fica um contorno quando passa o mouse em cima*/
+}
+
+button:hover{ /* hover quer dizer que quando o mouse está em cima*/
+    text-decoration: underline; /*Linha em baixo, quando o mouse estiver em cima*/
+}
+
+
+.c1{
+    color: #ffff;    /*Cor das letras de c1*/
+    background: #FF5e84;    /*Cor do fundo de c1*/
+    height: 30px; /*altura*/
+    width: 120px; /*largura*/
+    border-radius: 10px; /*Formato da borda*/
+    box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.25);/*Sombra debaixo do botão, sendo o 1 px o eixo x, o 2 px o eixo y e o 3 a profundidade*/
+}
+
+#i1:hover{
+    color:rgb(73, 73, 73);
+    font-style: italic;
+    font-weight: bold;
+}
+img, #i1{
+    margin-top: 40px;    /*Margem*/
+    margin-bottom: 10px; /*Margem ao redor */
+}
+
+#box{
+    width: 90%;            /*Se for menor que o definido em baixo, mantém essa proporção*/
+    max-width: 980px;      /*Largura da box*/
+    margin-left: auto;     /*Tamanho margem*/
+    margin-right: auto;    /*Tamanho margem*/
+    display:flex;                        /*height: altura da caixa;
+                            overflow: se exceder o tamanho, isso acontece, pode esconder e pá;*/
+    }
+    
+#intro{
+    width:300px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+main{
+    margin-top: 0px; /*Margem que da espaçamento*/
+}
+#buttons{
+    display: flex; /*Coloca um do lado do outro infinitamente*/
+    justify-content: space-around; /*Espaçamento entre*/
+}
+
+#buttons a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+#i1, #buttons{
+    text-align: center;
+}
+
+footer a{
+    color:rgb(77, 73, 73);
+    text-decoration: none;
+}
+footer a:hover{
+    color:#FF5e84;
+}
+
+#last-ideas{
+    margin-left: 32px;
+}
+.idea img{
+    width: 100px;
+    height: 100px;
+    margin-right: 32px;
+}
+.idea{
+    display: flex;
+    margin:30px 20px;
+    background-color: white;
+    border-radius:10px ;
+    padding: 10px; /*Preenchimento da box deixa gordinha*/
+    box-shadow: 0 6px 16px -8px rgba(1,1,1, 0.1); /*Esse 4 px suaviza a cor, "engolindo"*/
+}
+
+.idea p{
+    color: grey;
+    font-style: italic;
+}
+
+.idea .description{
+    margin:10px 2px;
+    
+}
+
+#modal{
+    background-color: #FF5e84;
+    position: absolute; /* Com absolute tu habilita o movimento do bagulho, ai tu usa, top, bottom, right e left atirbuindo valores para posicionar*/
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: -100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: 500ms; /*Coloca um delayzinho que deixa suave a troca de tela, em tudo que ta no modal*/
+}
+
+#modal.addScroll{
+    overflow: auto;
+}
+#modal .content{
+    margin-top: 40px;
+    color: white;
+}
+
+#modal .content h1{
+    text-align: center;
+}
+
+.content form{
+    width: 80%;
+    max-width:800px;
+    margin: 0 auto 5%;
+    display: grid; /*Método de alinhamento, possibilita montagem de colunas e etc depende do template*/
+    grid-template-columns: 1fr 1fr; /*Desbloquado pelo display grid, o template ai no caso ta divido por 1fração pra cada lado */
+    gap: 20px; /*Espaçamento entre as colunas no caso*/
+}
+form input{
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.content form div:nth-child(3),.content form div:nth-child(4), .content form div:nth-child(5){ /*Método de selecionar qual o div exato que tu quer, sem ter id*/
+    grid-column: span 2; /*Espande o escolhido até o 2 no caso*/
+}
+/*.content form div:nth-child(4){
+    width: 400px;
+    height: 150px;*/
+
+
+form a{
+    background-color: rgb(235, 168, 212);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 152px;
+    height: 40px;
+    display: flex;
+    align-items: center; /*Alinha o texto de dentro o/*/
+    grid-column: 1;
+    justify-self: left;
+    margin:  10px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    justify-content: center;
+    transition: 500ms; /*Tempo que ele demora para entrar no modo hover*/
+
+}
+
+#modal .content button{
+    text-align: center;
+    margin: 10px 10px;
+    background-color: white;
+    color:#FF5e84;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    grid-column: 2; /*Coloca na coluna 2*/
+    justify-self: end; /*Posiciona "self" ele menos no fim no caso da coluna 2*/
+}
+
+
+form a:hover{
+    background-color: white;
+    color: #FF5e84;
+}
+
+ form button:hover{
+ font-style: italic;
+ text-decoration: none;
+}
+
+form label{
+    font-size: 16px;
+    font-weight: 600; /*Grossura da letra*/
+    line-height: 32px;
+    letter-spacing: 0.5px;
+}
+
+#modal.hide{ /*Uma id é mais forte que uma classe, então pra funfar, tu tem que colocar assim*/
+    opacity: 0;
+    visibility: hidden;
+}
+
+#page{
+    display: block;
+    margin: 40px;
+}
+
+#page header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page nav{
+    display: flex;
+}
+
+#page nav li{
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 16px;
+    margin-top: 70px;
+    color: black;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 400ms;
+}
+#page nav li:last-child{
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 16px;
+    margin-top: 70px;
+    background-color: #FF5e84;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 400ms; 
+}
+
+#page nav a{
+    color: black;
+    font-style: none;
+    text-decoration: none;
+    font-weight: 600;  
+}  
+
+#page nav li:last-child a{
+    color: white;
+}
+   
+#page nav a:hover{
+    background-color: #FF5e84;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+#page nav li:last-child:hover, #page nav li:last-child a:hover{
+    background: none;
+    color:#25282B;
+}
+
+#page #title h1{
+    text-align: center;
+    font-size: 32px;
+    color:#24252b;
+    margin-bottom: 40px;
+}
+
+main #ideas{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+
+#page footer{
+    text-align: center;
+    font-size: 14px;
+    opacity: 40%;
+    margin-top: 50px;
+}
+
+#page footer:hover{
+    color: red;
+    font-size: 16px;
+}
+.ideabuttom{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF5e84;
+}

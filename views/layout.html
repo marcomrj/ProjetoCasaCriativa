@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Casa Criativa</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,600,700&display=swap" rel="stylesheet"> <!--Pra você colocar a fonte em algum local, tu deixa o link aqui e coloca a familia no css, pega no google fonts-->
+    <link rel="stylesheet" href="/style.css"> <!--Puxou o arquivo css e colocou-->
+</head>
+
+<body> <!--Divindo o blocos, cabeçalho, principal, botoes, essas porra-->
+     <div id="box">
+        <!--Esse bloco é reposto pelo bloco contido no index.html-->
+        {% block content%} 
+        {% endblock%}
+      </div>
+      {%include "modal.html"%}
+         <script>
+             function onoff(){ /*Coloquei uma função que eu nomei de onoff, no modal, assim quando eu clicar, ele recebe a classe hide*/
+    document
+        .querySelector("#modal")
+        .classList
+        .toggle("hide")
+}
+         </script>       
+
+                
+
+                
+               
+
+               
+            </form>
+
+
+
+        </div>
+
+
+
+    </div>
+    
+
+</body>

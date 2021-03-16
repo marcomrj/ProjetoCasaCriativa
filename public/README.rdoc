@@ -1,0 +1,10 @@
+Projeto voltado a um desenvolvimentod e um site de simples acesso para o usuário onde o mesmo possa adicionar e/ou ver idéias de hobbies ou novas práticas para se praticar durante um período de distanciamento social.
+Segue o link de imagens da interface já com o css finalizado.
+Página principal: https://drive.google.com/file/d/1YlUF9OfmmLYn4UcTLJKSDfze8eE6W94z/view?usp=sharing
+
+Página para postar uma nova idéia:https://drive.google.com/file/d/1lQPc4pWSFsLb9iScs15-hZthnFlCay9k/view?usp=sharing
+
+Página para ver as idéias postadas: https://drive.google.com/file/d/1V3u2E4jMmRERrO8yfDidNHLWGWHfYfL7/view?usp=sharing
+
+
+
