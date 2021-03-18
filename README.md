@@ -1,5 +1,5 @@
 # ProjetoCasaCriativa
-##Projeto que visa o desenvolvimento de uma página web com a finalidade de compartilhamento de possíveisnovos hábitos e hobbies para se adquirir durante o peŕiodo de isolamento social.
+######   Projeto que visa o desenvolvimento de uma página web com a finalidade de compartilhamento de possíveisnovos hábitos e hobbies para se adquirir durante o peŕiodo de isolamento social.
 ## Prints de demonstração do projeto
 
 ### Página principal 
