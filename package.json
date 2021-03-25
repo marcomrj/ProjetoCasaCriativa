@@ -11,8 +11,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
