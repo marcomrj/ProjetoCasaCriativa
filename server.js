@@ -1,9 +1,11 @@
 const express = require("express") //Passo o express para a variável express
 const server = express()            // Variável chama a função express
+const PORT = 3000;
+const HOST = '0.0.0.0';
 server.use(express.static("public")) //Configura uma pasta para usar o estático dela CSS/IMAGENS/SCRIPTS
 server.use(express.urlencoded({extended: true})) //Libera disponibilidade do body no / POST
-server.listen(3000) //Porta que eu estou utilizando do host para hospedar o server
-
+server.listen(3000) //Porta que eu estou utilizando do host para hospedar o serverpa
+server.listen(PORT,HOST);
 const db = require("./db")
 
 /*/Array com os objetos que será utilizada para simplificar o codigo no índez do html
