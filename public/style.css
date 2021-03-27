@@ -8,9 +8,9 @@ body.hideScroll{
     overflow: hidden;
 }
 button{
-    border:none;        /*Borda do botão*/
-    font-weight: bold;       /*Tamanho da fonte*/
-    cursor: pointer;        /*Quando o cursor ficar em cima, fica de tal jeito*/
+    border:none;                /*Borda do botão*/
+    font-weight: bold;        /*Tamanho da fonte*/
+    cursor: pointer;         /*Quando o cursor ficar em cima, fica de tal jeito*/
     outline: none;          /*Não fica um contorno quando passa o mouse em cima*/
 }
 
@@ -20,11 +20,11 @@ button:hover{ /* hover quer dizer que quando o mouse está em cima*/
 
 
 .c1{
-    color: #ffff;    /*Cor das letras de c1*/
-    background: #fd597f;    /*Cor do fundo de c1*/
-    height: 30px; /*altura*/
-    width: 120px; /*largura*/
-    border-radius: 10px; /*Formato da borda*/
+    color: #ffff;             /*Cor das letras de c1*/
+    background: #fd597f;     /*Cor do fundo de c1*/
+    height: 30px;             /*altura*/
+    width: 120px;            /*largura*/
+    border-radius: 10px;    /*Formato da borda*/
     box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.25);/*Sombra debaixo do botão, sendo o 1 px o eixo x, o 2 px o eixo y e o 3 a profundidade*/
 }
 
