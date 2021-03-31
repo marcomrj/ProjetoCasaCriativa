@@ -1,7 +1,7 @@
 const sqlite3 = require('sqlite3').verbose()
 const db = new sqlite3.Database('./casa-criativa.db') //Atribui a db o sqlite informando a raiz de onde está o código
 
-db.serialize(function() {
+db.serialize(function() {   //Criação da tabela por meio do Sqlite3
 
     //Cria tabela
     db.run(`

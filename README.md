@@ -1,6 +1,6 @@
 # ProjetoCasaCriativa
-######   Projeto que visa o desenvolvimento de uma página web com a finalidade de compartilhamento de possíveisnovos hábitos e hobbies para se adquirir durante o peŕiodo de isolamento social.
-## Prints de demonstração do projeto
+######   Projeto que visa o desenvolvimento de uma página web com a finalidade de compartilhamento de possíveis novos hábitos e hobbies para se adquirir durante o peŕiodo de isolamento social.
+## Prints layout do projeto
 
 ### Página principal 
 ![MainPage](https://github.com/marcomrj/ProjetoCasaCriativa/blob/main/imagesReadMe/telaPrinciapal.png)
